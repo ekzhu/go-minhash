@@ -27,6 +27,8 @@ import (
 
 type intHeap []uint64
 
+type Hash64 func([]byte) uint64
+
 func (h intHeap) Len() int { return len(h) }
 
 // actually Greater, since we want a max-heap
